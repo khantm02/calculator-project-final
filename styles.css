@@ -1,0 +1,87 @@
+
+/* Universal selector is used and default properties and values are added first */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: border-box;
+}
+
+/* Element selector is used to select all butoons. Inline styling
+and even n-th child is avoided to give clarity what is being selected 
+for styling. hsl is used instead of rgb and other methods to increase 
+the lightness by 20 percent each time with hover and active pseudo classes */
+
+button {
+    width: 80px;
+    height: 80px;
+    border: none;
+    color: white;
+    background-color: hsl(0, 0%, 10%);
+    font-size: 25px;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 50%;
+    gap: 10px;
+}
+div .c {
+    color: orangered;
+}
+
+div .operators-btn {
+    color: hsl(120, 69%, 47%);
+}
+
+div .equal-btn {
+    background-color: hsl(120, 69%, 47%);
+    color: white
+}
+
+/* Increasing lightness with hover and active pseudo class */
+
+button:hover {
+    background-color: hsl(0, 0%, 30%);
+}
+
+button:active {
+    background-color: hsl(0, 0%, 50%);
+}
+
+/* Then, buttons are arranged in grid by key id selector. 
+Both styling and arrangement is imitating my phone's 
+calculator app as much as possible as I cannot come up with 
+my original desgin and styling */
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    gap: 5px;
+} 
+
+#calculator {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    border-radius: 20px;
+    max-width: 50%;
+    overflow: hidden;
+}
+
+#textarea {
+    background-color: hsl(0, 0%, 20%);
+    font-size: 40px;
+    color: white;
+    width: 100%;
+    border: none;  
+    padding-right: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: right;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
