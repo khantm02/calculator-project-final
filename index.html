@@ -1,8 +1,6 @@
 <!-- HTMl structure is created with all keys nested in a div to use grid and style efficiently.
 Everything element is nested in calculator div for the purpose of using flexbox.
-Only class selectors are used to not confuse cascade specificity.
-Both inline styling and onlick are avoided to keep all styling and 
-scripting in their own page.  -->
+Inline styling is avoided. onlick is used here to keep JS file clean.  -->
  
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +14,7 @@ scripting in their own page.  -->
     <div id="calculator">
         <input id="textarea"> 
         <div id="keys">
-            <button onclick="clear()" class="c">C</button>
+            <button onclick="clearDisplay()" class="c">C</button>
             <button></button>
             <button></button>
             <button onclick="append('/')" class="operators-btn">/</button>

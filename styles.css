@@ -24,6 +24,9 @@ button {
     border-radius: 50%;
     gap: 10px;
 }
+
+/* Special buttons are styled differently */
+
 div .c {
     color: orangered;
 }
@@ -59,13 +62,18 @@ my original desgin and styling */
     gap: 5px;
 } 
 
+/* 50 percent of the screen width is used for the display */
+
 #calculator {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: black;
     border-radius: 20px;
     max-width: 50%;
     overflow: hidden;
+    cursor: pointer;
 }
+
+/* Background color for textarea is made lighter */
 
 #textarea {
     background-color: hsl(0, 0%, 20%);
@@ -78,6 +86,9 @@ my original desgin and styling */
     padding-bottom: 20px;
     text-align: right;
 }
+
+/* Flexbox is displayed in the center horizontally and vertically. 
+   100 percent viewport heigth is chosen */
 
 body {
     display: flex;
